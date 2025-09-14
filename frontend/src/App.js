@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   // --- STATE MANAGEMENT ---
   // Form state
-  const [url, setUrl] = useState('');
+  const [url, setUrl] = useState('https://en.wikipedia.org/wiki/HMS_Example_(P165)');
   const [maxPages, setMaxPages] = useState(10);
   
   // Data display state
