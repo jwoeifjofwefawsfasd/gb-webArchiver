@@ -45,7 +45,7 @@ web-archiver/
 
   * Node.js and npm (or yarn) installed on your machine.
 
-### 1\. Set up the Backend
+### 1\. Clone repo and set up the Backend
 
 First, clone & get the server running.
 
