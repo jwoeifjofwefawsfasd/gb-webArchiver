@@ -50,7 +50,7 @@ web-archiver/
 First, clone & get the server running.
 
 ```bash
-#Navigate to a directory of your choosing
+# Clone after navigating to a directory of your choosing
 git clone https://github.com/jwoeifjofwefawsfasd/gb-webArchiver.git
 
 # Navigate to the backend directory
