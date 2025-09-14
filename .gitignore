@@ -1,0 +1,10 @@
+# Ignore Node.js dependency folders in both projects
+/backend/node_modules
+/frontend/node_modules
+
+# Ignore user-generated archives
+/backend/archives
+
+# Ignore IDE and OS files
+.DS_Store
+.vscode/

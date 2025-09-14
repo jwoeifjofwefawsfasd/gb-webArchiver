@@ -1,0 +1,189 @@
+/* --- GLOBAL & BODY STYLES --- */
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+/* --- HEADER & FORM --- */
+.App-header {
+  padding: 2rem;
+}
+
+.archive-form {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap; 
+}
+
+.url-input {
+  flex-grow: 1; 
+  max-width: 450px; 
+  min-width: 250px; 
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #61dafb;
+  color: #282c34;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+/* --- SETTINGS BAR --- */
+.settings-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  margin: 0 auto 2rem auto;
+  max-width: 300px;
+  background-color: #333842;
+  border-radius: 8px;
+}
+
+.settings-bar label {
+  font-weight: bold;
+}
+
+.max-pages-input {
+  width: 60px;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* --- ARCHIVE VIEWER LAYOUT --- */
+.archive-viewer {
+  padding: 1rem 2rem 2rem 2rem;
+  text-align: left;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.archive-viewer h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.archive-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+/* --- COLUMN & LIST STYLES --- */
+.archive-column {
+  background-color: #333842;
+  padding: 1rem;
+  border-radius: 8px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.archive-column h3 {
+  margin-top: 0;
+  border-bottom: 1px solid #555;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.archive-column ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 1rem;
+  overflow-y: auto; /* Make lists scrollable */
+}
+
+.archive-column li {
+  padding: 0.75rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  word-wrap: break-word;
+  font-size: 0.9em;
+}
+
+.archive-column li:hover {
+  background-color: #4a505a;
+}
+
+.archive-column li.selected {
+  background-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+}
+
+.pages-list-header {
+  text-align: center;
+  margin: 1.5rem 0 0.5rem 0;
+  border-top: 1px solid #555;
+  padding-top: 1rem;
+}
+
+.crawled-pages-list li {
+  cursor: default;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.crawled-pages-list li:hover {
+  background-color: transparent;
+}
+
+/* --- ACTION BUTTONS (Column 4) --- */
+.action-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  box-sizing: border-box; 
+}
+
+.view-button {
+  background-color: #4CAF50;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.view-button:hover {
+  background-color: #45a049;
+}
+
+.refresh-button {
+  background-color: #008CBA;
+  color: white;
+}
+.refresh-button:hover {
+  background-color: #007B9E;
+}
